@@ -26,8 +26,9 @@ public class appTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
-        options.addArguments("--headless");
+       // options.addArguments("--headless");
         driver = new ChromeDriver(options);
+        driver.get("https://localhost:9999");
     }
 
     @AfterEach
